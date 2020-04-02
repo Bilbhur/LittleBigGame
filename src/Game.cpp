@@ -71,9 +71,7 @@ void Game::generateEnnemies()
         // for each second, we generate the ennemies
         int now = _clock.getElapsedTime().asSeconds();
         if (lastGeneration != now) {
-            std::cout << "LOG INFO : ";
             for (std::list<EnnemyToGenerate>::const_iterator i = enm[now].begin(), end = enm[now].end(); i != end; ++i) {
-                std::cout << "Ennemy[" << i->ennemyType << "]atY[" << i->ypos << "]  ";
                 space.add(EnnemyFactory::GetInstance().Create(*this, space, 1050, i->ypos, i->ennemyType));
             }
             std::cout << std::endl;
