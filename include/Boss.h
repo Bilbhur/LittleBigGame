@@ -12,7 +12,7 @@ class Boss: public Ennemy
     private:
         int direction = 1;
         sf::Color bossColor[3] = {
-            sf::Color::Red,
+            sf::Color::Magenta,
             sf::Color::Cyan,
             sf::Color::Green
         };
