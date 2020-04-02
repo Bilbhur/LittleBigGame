@@ -74,7 +74,6 @@ void Game::generateEnnemies()
             for (std::list<EnnemyToGenerate>::const_iterator i = enm[now].begin(), end = enm[now].end(); i != end; ++i) {
                 space.add(EnnemyFactory::GetInstance().Create(*this, space, 1050, i->ypos, i->ennemyType));
             }
-            std::cout << std::endl;
         }
         lastGeneration = now;
     }
