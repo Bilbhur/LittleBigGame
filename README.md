@@ -1,2 +1,1 @@
-# Groupe de majda_a
-
+# Space Invaders
